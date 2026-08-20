@@ -505,21 +505,21 @@ Only `.env.example`, containing placeholder credentials, should be included in t
                     │    Database   │
                     └───────────────┘
 ```
+## URL Shortener LLD 
+<img width="3295" height="2760" alt="URL Shortener - Low Level Design@1 25x" src="https://github.com/user-attachments/assets/699b1a72-87f4-44cf-bab1-4d9608092a05" />
+
+
 ## Future Improvements
 
 For a production-scale URL shortener, the following features could be considered:
-
-* Redis caching for frequently accessed URLs
 * URL expiration
 * Custom short aliases
 * Click and usage analytics
-* Rate limiting
 * Authentication and authorization
 * Database migrations using Alembic
 * Automated unit and integration tests
 * Docker containerization
 * HTTPS and production deployment
-
 These features are outside the scope of this basic assessment.
 
 ## Conclusion
