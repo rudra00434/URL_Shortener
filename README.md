@@ -480,7 +480,7 @@ Only `.env.example`, containing placeholder credentials, should be included in t
                            │ HTTP Request
                            ▼
                     ┌───────────────┐
-                    │    FastAPI    │
+                    │    FastAPI    │                    
                     │   API Layer   │
                     └───────┬───────┘
                             │
@@ -507,6 +507,29 @@ Only `.env.example`, containing placeholder credentials, should be included in t
                     │  PostgreSQL   │
                     │    Database   │
                     └───────────────┘
+```
+## Advancement (Redis caching & Rate limiting Added )
+```text
+                       Client
+                       │
+                       ▼
+                    FastAPI
+                       │
+                ┌──────┴──────┐
+                │             │
+                ▼             ▼
+          Rate Limiter      Redis
+                │             │
+                │        Cache HIT
+                │             │
+                │             ▼
+                │          Redirect
+                │
+                ▼
+           PostgreSQL
+                │
+                ▼
+          Redis Cache
 ```
 ## URL Shortener LLD 
 <img width="3295" height="2760" alt="URL Shortener - Low Level Design@1 25x" src="https://github.com/user-attachments/assets/699b1a72-87f4-44cf-bab1-4d9608092a05" />
