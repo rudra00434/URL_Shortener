@@ -1,6 +1,6 @@
 # URL Shortener API
 
-A basic URL Shortener REST API built using **FastAPI, PostgreSQL, and SQLAlchemy**.
+An Advance Production grade URL Shortener REST API built using **FastAPI, PostgreSQL, SQLAlchemy & Redis**.
 
 The API accepts a long URL, generates a unique short code, stores the URL mapping in PostgreSQL, and redirects users from the shortened URL to the original URL.
 
