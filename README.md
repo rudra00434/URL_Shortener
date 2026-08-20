@@ -28,6 +28,7 @@ The API accepts a long URL, generates a unique short code, stores the URL mappin
 | Pydantic        | Request validation           |
 | Uvicorn         | ASGI server                  |
 | psycopg2-binary | PostgreSQL database driver   |
+| Redis           |  Browser Caching fast access |
 
 ## Project Structure
 
@@ -41,6 +42,8 @@ url_shortener/
 │   ├── schemas.py
 │   ├── crud.py
 │   └── main.py
+|   └── rate_limiter.py
+|   └── redis_client.py
 │
 ├── .env.example
 ├── .gitignore
